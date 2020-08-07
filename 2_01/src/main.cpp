@@ -4,8 +4,7 @@
 
 int main(void)
 {
-    student s1;
-      
+    student s1; 
     s1.setName("Anish");
     long bookid[MAX];
     int i,n;
@@ -24,9 +23,16 @@ int main(void)
     s1.setgrade(A);
     std::cout << "Name \t"  << s1.getName() <<std::endl;
     std::cout <<"Grade is : \t" ;
-    s1.getgrade();
+   s1.getgrade();
     std::cout << "Books issued:" << std::endl;
-    s1.getissuedBook(n);
+    long * ptr =s1.getissuedBook();
+    for (i=0;i<n;i++)
+    {
+    std::cout << *(ptr+i) <<std::endl;
     }
+    }
+    else
+    {
     std::cout << "The library cant allow you more than 10 books" <<std::endl;
+    }
 }

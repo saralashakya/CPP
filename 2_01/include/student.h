@@ -1,5 +1,4 @@
 
-//student.h
 #include <string.h>
 #ifndef STUDENT_H
 #define STUDENT_H
@@ -16,9 +15,9 @@ class student {
     std:: string getName();
     void setName(std::string);
     void issueBook(long books[MAX],int);
-    void getissuedBook(int );
-    void setgrade(grade);
-    void getgrade();
+    long *  getissuedBook( );
+  void setgrade(grade);
+void getgrade();
 
     
 };

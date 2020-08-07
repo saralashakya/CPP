@@ -2,7 +2,6 @@
 #include <cstring>
 
 #include "student.h"
-
 void student::setName(std::string aname)
 {
     this->name =aname;
@@ -11,6 +10,7 @@ std::string  student::getName()
 {
     return this->name;
 }
+
 void student::issueBook(long p[MAX],int n )
 { int i;
     for (i=0;i<n ;i++)
@@ -19,13 +19,10 @@ void student::issueBook(long p[MAX],int n )
     }
 
 }
-void student::getissuedBook(int n)
+long *  student::getissuedBook()
 {   
-    for (int i=0 ;i<n ;i++)
-    {
-        std::cout <<books[i] << std::endl;
+    return books;
     }
-}
 void student::setgrade(grade g)
 {
     this->g =g;
