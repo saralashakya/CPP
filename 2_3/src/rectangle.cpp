@@ -11,8 +11,8 @@ void rectangle :: setPoints(const point & a ,const point & b)
 void rectangle :: getDimensions(double & l, double & w )
 {
     point p2;
-    p2.getpoint(2,2);
-    this ->l= p3.distance(p1);
+    p2.getpoint(2,1);
+    this ->l= p2.distance(p1);
 
    this-> w= p3.distance(p2);
 }
