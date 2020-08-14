@@ -13,5 +13,8 @@ std::cout << "Added time is:" <<t3 <<std::endl;
  Time t = ++t3; 
 
 std::cout << "Adding 1 sec to the added final time is:" <<t3<<std::endl;
+Time t4;
+t4=t3;
+std::cout << t4 <<endl;
 
  }
