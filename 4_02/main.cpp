@@ -1,6 +1,7 @@
 #include <iostream>
 #include "vector.h"
 int main(void){
+ 
 std::cout << "Please enter either a 1*3 vector or 3*1 vector" <<std::endl;
 vector v1(0,0,0); 
 v1.setrowsandcoloumns();

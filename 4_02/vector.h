@@ -13,13 +13,13 @@ vector ();
 vector (int ,int ,int);
 vector (const vector &);
 
-vector operator + (const vector &);
+friend vector operator +(const vector &, const vector &);
 vector operator += (const vector &);
 
-int operator * ( const vector &);
-bool operator == (const vector &);
+int  operator * ( const vector &);
+ bool operator == (const vector & );
 
-bool operator > (const vector &);
+friend bool operator > (const vector &,const vector &);
 void operator ++();
 void operator ++ (int) ;
 void operator -();

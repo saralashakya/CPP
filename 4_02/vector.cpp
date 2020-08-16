@@ -40,15 +40,14 @@ vector :: vector (const vector& another)
     e3 = another.e3;
 }
 
-vector vector ::operator +(const vector  &v1 ){
+ vector operator +(const vector  &v1,const vector &v2 ){
     
     int e1,e2,e3;
-    e1 =*(v1.e1)+ *(this-> e1); 
-    e2 =*(v1.e2)+ *(this -> e2);
-    e3 = *(v1.e3)+ *(this ->e3);
+    e1 =*(v1.e1)+ *(v2. e1); 
+    e2 =*(v1.e2)+ *(v2.e2);
+    e3 = *(v1.e3)+ *(v2.e3);
     vector v(e1,e2,e3); 
-    return v;
-    
+    return v;   
  
 }
 vector vector ::operator +=(const vector  &v1 ){
@@ -98,9 +97,10 @@ bool vector :: operator==(const vector &v)
     {return false;}
 
 }
-bool vector :: operator>(const vector &v)
+
+ bool operator >(const vector &v1, const vector &v2)
 {
-    if (*this->e1 > *(v.e1) && *this->e2 > *(v.e2) && *this->e3 > *(v.e3))
+    if (*v1.e1 > *(v2.e1) && *v1.e2 > *(v2.e2) && *v1.e3 > *(v2.e3))
     {return 1;}
     else 
     {return 0;}
