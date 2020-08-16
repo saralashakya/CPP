@@ -8,7 +8,7 @@ int  *e3;
 
 public:
  int m ,n;
-setrowsandcoloumns();
+void setrowsandcoloumns();
 vector ();
 vector (int ,int ,int);
 vector (const vector &);

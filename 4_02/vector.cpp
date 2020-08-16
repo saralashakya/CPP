@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "vector.h"
-vector :: setrowsandcoloumns(){
+void vector :: setrowsandcoloumns(){
     std::cout << "Enter the rows and coloumns " <<std::endl;
     std::cin >> m >> n ;
 }
@@ -93,9 +93,9 @@ void vector::operator -()
 bool vector :: operator==(const vector &v)
 {
     if (*this->e1 == *(v.e1) && *this->e2 == *(v.e2) && *this->e3 == *(v.e3))
-    {return 1;}
+    {return true;}
     else 
-    {return 0;}
+    {return false;}
 
 }
 bool vector :: operator>(const vector &v)
